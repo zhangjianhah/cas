@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="cas-overlay" />
-        <module name="cas-client3" />
         <module name="cas-client4" />
+        <module name="cas-client3" />
         <module name="cas" />
       </profile>
     </annotationProcessing>

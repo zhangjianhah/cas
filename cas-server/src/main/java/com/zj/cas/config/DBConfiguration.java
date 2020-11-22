@@ -1,14 +1,11 @@
 package com.zj.cas.config;
 
 import com.alibaba.druid.pool.DruidDataSource;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.core.JdbcTemplate;
 
 import javax.sql.DataSource;
-
-import org.apache.commons.lang3.ClassUtils;
 
 @Configuration
 public class DBConfiguration {
