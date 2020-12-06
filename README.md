@@ -132,10 +132,12 @@ cas已经替我们解决跨域问题，所以不需要使用反向代理控制�
 
 # 3.cas server的集群
 
+这里需要注意的是，即使cas server的端口不一样，他们的session和ticket也是共享单点。
+
 1. 引入相关依赖,cas自己基于自身定义了一些托管方案，需要引用其定制版本的jar包。
 
    这里的两个依赖，一个是为了实现ticket共享，后者是为了实现session共享。
-   
+
    ```xml
                   <dependency>
                        <groupId>org.apereo.cas</groupId>
@@ -149,9 +151,9 @@ cas已经替我们解决跨域问题，所以不需要使用反向代理控制�
                        <version>${cas.version}</version>
                    </dependency>
    ```
+
    
-   
-   
+
 2. 在application.properties中添加以下配置
 
    ```properties
