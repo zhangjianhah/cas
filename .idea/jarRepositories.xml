@@ -2,9 +2,19 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="defaultmaven" />
+      <option name="name" value="default maven" />
+      <option name="url" value="http://repo1.maven.org/maven2/" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="shibboleth-releases" />
       <option name="name" value="shibboleth-releases" />
       <option name="url" value="https://maven.aliyun.com/repository/public" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="shibboleth-releases" />
+      <option name="name" value="shibboleth-releases" />
+      <option name="url" value="https://build.shibboleth.net/nexus/content/repositories/releases" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -13,8 +23,23 @@
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
       <option name="name" value="Maven Central repository" />
       <option name="url" value="https://repo1.maven.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="sonatype-releases" />
+      <option name="name" value="sonatype-releases" />
+      <option name="url" value="http://oss.sonatype.org/content/repositories/releases/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="defaultmaven" />
+      <option name="name" value="default maven" />
+      <option name="url" value="https://maven.aliyun.com/repository/public" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="sonatype-snapshots" />
@@ -30,6 +55,11 @@
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="sonatype-snapshots" />
+      <option name="name" value="sonatype-snapshots" />
+      <option name="url" value="https://oss.sonatype.org/content/repositories/snapshots/" />
     </remote-repository>
   </component>
 </project>

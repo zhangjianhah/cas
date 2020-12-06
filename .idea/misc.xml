@@ -3,6 +3,7 @@
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
     <file url="file://$PROJECT_DIR$/cas-server/overlays" />
+    <file url="file://$PROJECT_DIR$/cas-server2/overlays" />
     <file type="web" url="file://$PROJECT_DIR$" />
   </component>
   <component name="MavenProjectsManager">
@@ -12,6 +13,7 @@
         <option value="$PROJECT_DIR$/cas-server/pom.xml" />
         <option value="$PROJECT_DIR$/cas-client3/pom.xml" />
         <option value="$PROJECT_DIR$/cas-client4/pom.xml" />
+        <option value="$PROJECT_DIR$/cas-server2/pom.xml" />
       </list>
     </option>
   </component>

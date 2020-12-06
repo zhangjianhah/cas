@@ -1,8 +1,8 @@
 cas:
   # cas服务端的地址
-  server-url-prefix: http://localhost:8443/cas
+  server-url-prefix: http://localhost:80/cas
   # cas服务端的登录地址
-  server-login-url: http://localhost:8443/cas/login
+  server-login-url: http://localhost:80/cas/login
   # 当前服务器的地址(客户端)
   client-host-url: http://localhost:9003
   # Ticket校验器使用Cas30ProxyReceivingTicketValidationFilter
@@ -11,3 +11,11 @@ server:
   port: 9003
   servlet:
     context-path: /client3
+
+
+
+
+
+udf:
+  ignorePattern: /logoutSuccess|/index
+  ignoreUrlPatternType:

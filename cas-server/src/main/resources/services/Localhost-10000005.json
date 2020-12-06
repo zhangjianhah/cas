@@ -1,0 +1,9 @@
+{
+  "@class": "org.apereo.cas.services.RegexRegisteredService",
+  "serviceId": "^(http)://localhost:9004/client5.*",
+  "name": "本地服务5",
+  "id": 10000005,
+  "description": "这是本地client5服务，serviceId即是URL规则",
+  "evaluationOrder": 1,
+  "logoutUrl": "http://localhost:9005/client5/logout"
+}

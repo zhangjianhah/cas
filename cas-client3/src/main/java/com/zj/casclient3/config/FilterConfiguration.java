@@ -21,15 +21,15 @@ import java.util.Map;
 public class FilterConfiguration {
 
 
-    //    @Value("${cas.server-url-prefix}")
-    private String serverUrlPrefix = "http://localhost:8443/cas";
-    //    @Value("${cas.server-login-url}")
-    private String serverLoginUrl = "http://localhost:8443/cas/login";
-    //    @Value("${cas.client-host-url}")
-    private String clientHostUrl = "http://localhost:9003";
-    //    @Value("${udf.ignorePattern}")
-    private String ignorePattern = "/logoutSuccess|/index";
-    //    @Value("${udf.ignoreUrlPatternType}")
+    @Value("${cas.server-url-prefix}")
+    private String serverUrlPrefix;
+    @Value("${cas.server-login-url}")
+    private String serverLoginUrl;
+    @Value("${cas.client-host-url}")
+    private String clientHostUrl;
+    @Value("${udf.ignorePattern}")
+    private String ignorePattern;
+    @Value("${udf.ignoreUrlPatternType}")
     private String ignoreUrlPatternType;
 
 

@@ -6,6 +6,7 @@ import org.jasig.cas.client.session.SingleSignOutFilter;
 import org.jasig.cas.client.session.SingleSignOutHttpSessionListener;
 import org.jasig.cas.client.util.HttpServletRequestWrapperFilter;
 import org.jasig.cas.client.validation.Cas30ProxyReceivingTicketValidationFilter;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -20,15 +21,15 @@ import java.util.Map;
 public class FilterConfiguration {
 
 
-    //    @Value("${cas.server-url-prefix}")
-    private String serverUrlPrefix = "http://localhost:8443/cas";
-    //    @Value("${cas.server-login-url}")
-    private String serverLoginUrl = "http://localhost:8443/cas/login";
-    //    @Value("${cas.client-host-url}")
-    private String clientHostUrl = "http://localhost:9004";
-    //    @Value("${udf.ignorePattern}")
-    private String ignorePattern = "/logoutSuccess|/index";
-    //    @Value("${udf.ignoreUrlPatternType}")
+    @Value("${cas.server-url-prefix}")
+    private String serverUrlPrefix;
+    @Value("${cas.server-login-url}")
+    private String serverLoginUrl;
+    @Value("${cas.client-host-url}")
+    private String clientHostUrl;
+    @Value("${udf.ignorePattern}")
+    private String ignorePattern;
+    @Value("${udf.ignoreUrlPatternType}")
     private String ignoreUrlPatternType;
 
 
